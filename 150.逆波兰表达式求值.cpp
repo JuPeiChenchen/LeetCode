@@ -1,3 +1,11 @@
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+#include "commoncppproblem150.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
 /*
  * @lc app=leetcode.cn id=150 lang=cpp
  *
@@ -8,12 +16,12 @@
 class Solution {
 public:
     int evalRPN(vector<string>& tokens) {
-        stack<int> st;
+        stack<long long int> st;
         for (int i = 0; i < tokens.size(); i++) {
             if (tokens[i] == "+" || tokens[i] == "-" || tokens[i] == "*" || tokens[i] == "/") {
-                int num1 = st.top();
+                long int num1 = st.top();
                 st.pop();
-                int num2 = st.top();
+                long int num2 = st.top();
                 st.pop();
                 if (tokens[i] == "+") st.push(num2 + num1);
                 if (tokens[i] == "-") st.push(num2 - num1);
@@ -28,5 +36,7 @@ public:
         return result;
     }
 };
+
+
 // @lc code=end
 
