@@ -3,7 +3,8 @@
         "vector": "cpp",
         "functional": "cpp",
         "*.tcc": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "array": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
