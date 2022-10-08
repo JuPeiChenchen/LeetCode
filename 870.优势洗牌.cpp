@@ -30,6 +30,22 @@ public:
         return ans;
     }
 };
+/*class Solution {
+public:
+    vector<int> advantageCount(vector<int> &nums1, vector<int> &nums2) {
+        int n = nums1.size(), ids[n];
+        vector<int> ans(n);
+        sort(nums1.begin(), nums1.end());
+        iota(ids, ids + n, 0);
+        sort(ids, ids + n, [&](int i, int j) { return nums2[i] < nums2[j]; });
+        int left = 0, right = n - 1;
+        for (int x : nums1)
+            ans[x > nums2[ids[left]] ? ids[left++] : ids[right--]] = x;
+        return ans;
+    }
+};
+
+*/
 
 // @lc code=end
 
