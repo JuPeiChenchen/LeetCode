@@ -33,6 +33,24 @@ public:
 private:
     static constexpr int mod = 1000000007;
 };
-l
+/*class Solution {
+public:
+    int distinctSubseqII(string S) {
+        vector<long int> line(26);
+        int size=S.size();
+        for(int i=0;i<size;i++){
+            long int sum=0;
+            for(int j=0;j<26;j++){
+                sum=(sum+line[j])%1000000007;
+            }
+            line[S[i]-'a']=sum+1;
+        }
+        long int result=0;
+        for(int i=0;i<26;i++){
+            result=(result+line[i])%1000000007;
+        }
+        return result;
+    }
+};*/
 // @lc code=end
 
