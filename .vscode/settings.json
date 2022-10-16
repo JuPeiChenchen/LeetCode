@@ -12,7 +12,8 @@
         "unordered_set": "cpp",
         "initializer_list": "cpp",
         "regex": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "utility": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
