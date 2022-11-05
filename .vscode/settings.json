@@ -13,7 +13,8 @@
         "initializer_list": "cpp",
         "regex": "cpp",
         "valarray": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "limits": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
