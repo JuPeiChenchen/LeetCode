@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-class Solution {
+/*class Solution {
 public:
     int maxProfit(vector<int>& prices) {
         int len = prices.size();
@@ -18,7 +18,16 @@ public:
         }
         return dp[len - 1][1];
     }
+};*/
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int result = 0;
+        for (int i = 1; i < prices.size(); i++) {
+            result += max(prices[i] - prices[i - 1], 0);
+        }
+        return result;
+    }
 };
-
 // @lc code=end
 
